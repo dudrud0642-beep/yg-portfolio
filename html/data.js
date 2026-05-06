@@ -2,7 +2,7 @@ const projectData = [
     {
       id: "project1",
       type: "01 - WEB AGENCY · WEB SITE",
-      title: "기업 브랜드<br>웹사이트 구축",
+      title: "기업 브랜드<br> 웹사이트 구축",
       year: "",
       work: "기획 · UI/UX 디자인 · 퍼블리싱",
       contribution: "100%",
@@ -33,7 +33,7 @@ const projectData = [
     {
         id: "project2",
         type: "02 - WEB AGENCY · WEB SITE",
-        title: "쇼핑몰 서비스<br>웹사이트 구축",
+        title: "쇼핑몰 서비스<br> 웹사이트 구축",
         year: "",
         work: "기획 · UI/UX 디자인 · 퍼블리싱",
         contribution: "100%",
@@ -64,7 +64,7 @@ const projectData = [
       {
         id: "project3",
         type: "03 - IN-HOUSE · CATALOG",
-        title: "자사 종합 제품 카탈로그<br>리뉴얼",
+        title: "자사 종합 제품 카탈로그<br> 리뉴얼",
         year: "2024",
         work: "기획 · 편집 디자인 · 브랜딩",
         contribution: "100%",
@@ -95,7 +95,7 @@ const projectData = [
       {
         id: "project4",
         type: "04 - WEB AGENCY · WEB SITE",
-        title: "제약사 브랜드<br>웹사이트 구축",
+        title: "제약사 브랜드<br> 웹사이트 구축",
         year: "",
         work: "기획 · UI/UX 디자인 · 퍼블리싱",
         contribution: "100%",
@@ -126,7 +126,7 @@ const projectData = [
       {
         id: "project5",
         type: "05- WEB AGENCY · WEB SITE",
-        title: "교육 웹사이트<br>리뉴얼",
+        title: "교육 웹사이트<br> 리뉴얼",
         year: "",
         work: "기획 · UI/UX 디자인 · 퍼블리싱",
         contribution: "100%",
@@ -157,7 +157,7 @@ const projectData = [
       {
         id: "project6",
         type: "06- WEB AGENCY · WEB SITE",
-        title: "교육 플랫폼<br>웹사이트 구축",
+        title: "교육 플랫폼<br> 웹사이트 구축",
         year: "2024",
         work: "기획 · UI/UX 디자인 · 퍼블리싱",
         contribution: "100%",
@@ -188,7 +188,7 @@ const projectData = [
       {
         id: "project7",
         type: "07 - IN-HOUSE · WEB SITE",
-        title: "자사 국문<br>웹사이트 리뉴얼",
+        title: "자사 국문<br> 웹사이트 리뉴얼",
         year: "2024",
         work: "기획 · UI/UX 디자인 · 퍼블리싱",
         contribution: "100%",
@@ -219,7 +219,7 @@ const projectData = [
       {
         id: "project8",
         type: "08 - IN-HOUSE · WEB SITE",
-        title: "자사 글로벌<br>웹사이트 리뉴얼",
+        title: "자사 글로벌<br> 웹사이트 리뉴얼",
         year: "2023",
         work: "기획 · UI/UX 디자인 · 퍼블리싱",
         contribution: "100%",
@@ -250,7 +250,7 @@ const projectData = [
       {
         id: "project9",
         type: "09 - IN-HOUSE · WEB SITE",
-        title: "Pump It Up 공식<br>웹사이트 리뉴얼",
+        title: "Pump It Up 공식<br> 웹사이트 리뉴얼",
         year: "2023",
         work: "기획 · UI/UX 디자인 · 퍼블리싱",
         contribution: "100%",
@@ -281,7 +281,7 @@ const projectData = [
       {
         id: "project10",
         type: "10 - WEB AGENCY · WEB SITE",
-        title: "유학원 브랜드<br>웹사이트 구축",
+        title: "유학원 브랜드<br> 웹사이트 구축",
         year: "",
         work: "서브페이지 UI/UX 디자인 · 퍼블리싱",
         contribution: "50%",

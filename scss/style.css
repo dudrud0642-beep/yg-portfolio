@@ -1023,10 +1023,6 @@ section {
   }
 }
 @media (max-width: 1024px) {
-  .gnb {
-    gap: 24px;
-    font-size: 13px;
-  }
   .project-list .list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1053,6 +1049,17 @@ section {
   .headerIn {
     height: 4rem;
   }
+  .gnb {
+    gap: 0.5rem;
+  }
+  .gnb.icon a {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+  }
+  .gnb.icon a .xi {
+    font-size: 1.063rem;
+  }
   .project-list {
     padding-top: 4rem;
   }
@@ -1065,6 +1072,13 @@ section {
   }
   .project-list .list li .li_in .bg_wrap.resize {
     padding-bottom: 56.25%;
+  }
+  .project_title {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+  .project_title br {
+    display: none;
   }
   .main-tit {
     font-size: 2rem;
@@ -1154,7 +1168,7 @@ section {
     font-size: 2rem;
   }
   .project-list .list li {
-    aspect-ratio: 3/2;
+    aspect-ratio: auto;
   }
   .work_detail_wrap .con_in.overview .tt,
   .work_detail_wrap .con_in.process .tt {

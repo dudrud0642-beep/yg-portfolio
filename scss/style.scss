@@ -1090,8 +1090,7 @@ section {
 
 @media (max-width: 1024px) {
   .gnb {
-    gap: 24px;
-    font-size: 13px;
+    
   }
 
   .project-list {
@@ -1135,6 +1134,20 @@ section {
     height: 4rem;
   }
  
+  .gnb{
+    gap:.5rem;
+  }
+
+  .gnb.icon a{
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+
+    .xi{
+      font-size: 1.063rem;
+    }
+
+  }
 
   .project-list {
     padding-top: 4rem;
@@ -1156,6 +1169,16 @@ section {
           }
         }
       }
+    }
+  }
+
+
+  .project_title{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    
+    br{
+      display: none;
     }
   }
 
@@ -1287,9 +1310,10 @@ section {
   }
  
   .project-list .list li {
-    aspect-ratio: 3 / 2;
+    aspect-ratio: auto;
   }
  
+  
   .work_detail_wrap .con_in.overview .tt,
   .work_detail_wrap .con_in.process .tt {
     font-size: 1.75rem;
