@@ -1073,13 +1073,6 @@ section {
   .project-list .list li .li_in .bg_wrap.resize {
     padding-bottom: 56.25%;
   }
-  .project_title {
-    padding: 1rem 0;
-    font-size: 1.5rem;
-  }
-  .project_title br {
-    display: none;
-  }
   .main-tit {
     font-size: 2rem;
     padding: 5rem 0 1rem 0;
@@ -1088,9 +1081,15 @@ section {
     padding-top: 4.5rem;
   }
   .project_title {
-    font-size: 2.5rem;
-    padding: 2rem 0;
-    word-break: keep-all;
+    padding: 1rem 0;
+    font-size: 1.375rem;
+  }
+  .project_title br {
+    display: none;
+  }
+  .type_wrap .tt {
+    font-size: 0.5rem;
+    letter-spacing: 0.313em;
   }
   .work_detail_wrap .con_in {
     padding: 3rem 0;
@@ -1164,9 +1163,6 @@ section {
   }
 }
 @media (max-width: 480px) {
-  .project_title {
-    font-size: 2rem;
-  }
   .project-list .list li {
     aspect-ratio: auto;
   }
