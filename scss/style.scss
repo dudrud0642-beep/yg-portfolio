@@ -74,6 +74,7 @@ $fc-txt: #676767;
   color: $fc-txt; //회색
 }
 
+.tblack{color: #111;}
 
 .downAni{ animation-name:downAni; animation-duration:3s; animation-iteration-count:infinite}
 @keyframes downAni{
@@ -703,7 +704,7 @@ section {
 .work_detail_wrap {
 
   .con_in {
-    padding: 5rem 0;
+    padding: 3rem 0;
 
    
     &.overview,
@@ -724,9 +725,6 @@ section {
     }
   }
 
-  .con_in:not(:first-of-type) {
-    padding: 5rem 0 2rem 0;
-  }
 }
 
 
@@ -1203,7 +1201,7 @@ section {
       padding: 3rem 0;
  
       &:not(:first-of-type) {
-        padding: 3rem 0 1.5rem 0;
+        padding: 3rem 0 0 0;
       }
  
       &.overview,
@@ -1295,12 +1293,43 @@ section {
     height: 3.5rem;
   }
  
+  .info_wrap .info_list li .li_in .t1{
+    font-size: .938rem;
+  }
+
+
 }
  
+
+
+@media (max-width: 690px) {
+
+  .skill_img_wrap .img{
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .skill_img_wrap .img{
+    &.photo{
+      width: 1.625rem;
+      height: 1.625rem;
+      line-height: 1.625rem;
+    }
+    &.ill{
+      width: 1.625rem;
+      height: 1.625rem;
+      line-height: 1.625rem;
+    }
+  }
+
+
+}
+
+
+
 @media (max-width: 480px) {
- 
-  
-  .project-list .list li {
+    .project-list .list li {
     aspect-ratio: auto;
   }
  

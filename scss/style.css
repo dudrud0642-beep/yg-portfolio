@@ -15,6 +15,10 @@
   --bgblack: #111;
 }
 
+.tblack {
+  color: #111;
+}
+
 .downAni {
   animation-name: downAni;
   animation-duration: 3s;
@@ -738,7 +742,7 @@ section {
 }
 
 .work_detail_wrap .con_in {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 .work_detail_wrap .con_in.overview .tt, .work_detail_wrap .con_in.process .tt, .work_detail_wrap .con_in.skill .tt {
   font-size: 3rem;
@@ -755,9 +759,6 @@ section {
 }
 .work_detail_wrap .con_in.bg {
   background: var(--bgblack);
-}
-.work_detail_wrap .con_in:not(:first-of-type) {
-  padding: 5rem 0 2rem 0;
 }
 
 .project_title {
@@ -1095,7 +1096,7 @@ section {
     padding: 3rem 0;
   }
   .work_detail_wrap .con_in:not(:first-of-type) {
-    padding: 3rem 0 1.5rem 0;
+    padding: 3rem 0 0 0;
   }
   .work_detail_wrap .con_in.overview .tt, .work_detail_wrap .con_in.process .tt {
     font-size: 2rem;
@@ -1160,6 +1161,26 @@ section {
     font-size: 0.875rem;
     padding: 1em 1.5em;
     height: 3.5rem;
+  }
+  .info_wrap .info_list li .li_in .t1 {
+    font-size: 0.938rem;
+  }
+}
+@media (max-width: 690px) {
+  .skill_img_wrap .img {
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .skill_img_wrap .img.photo {
+    width: 1.625rem;
+    height: 1.625rem;
+    line-height: 1.625rem;
+  }
+  .skill_img_wrap .img.ill {
+    width: 1.625rem;
+    height: 1.625rem;
+    line-height: 1.625rem;
   }
 }
 @media (max-width: 480px) {
