@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+   <!--20260630--> 
   <div class="page">
     <header class="header">
       <div class="box0 headerIn">
@@ -151,8 +152,9 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
   AOS.init({
-      duration: 800, // 애니메이션 속도 (0.8초)
-      once: false,    // 스크롤 올릴 때 다시 작동할지 여부
+    duration: 800, // 애니메이션 실행 시간 (0.8초)
+    once: true,    // 한 번만 실행 (스크롤을 다시 올려도 재실행 안 함)
+    offset: 0      // 요소가 화면에 보이는 즉시 애니메이션 시작
   });
   </script>
   
