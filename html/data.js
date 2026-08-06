@@ -27,7 +27,7 @@ const projectData = [
           desc: "수정사항 및 반응형 작업까지 마무리한 후 최종 검수를 거쳐<br>클라이언트에 납품하였습니다." 
         }
       ],
-      bgImg: "../images/detail01_img01.jpg",
+      bgImg: "../images/detail01_img01.jpg?v=260806",
       tools: ["ps", "ai", "html", "css", "js", "jquery"] 
     },
     {
@@ -58,7 +58,7 @@ const projectData = [
             desc: "수정사항 및 반응형 작업까지 마무리한 후 최종 검수를 거쳐<br>클라이언트에 납품하였습니다." 
           }
         ],
-        bgImg: "../images/detail01_img02.jpg",
+        bgImg: "../images/detail01_img02.jpg?v=260806",
         tools: ["ps", "ai", "html", "css", "js", "jquery"] 
       },
       {
@@ -89,7 +89,7 @@ const projectData = [
             desc: "영업팀에 영문 번역을 요청하여 번역본을 반영한 후<br>최종 검수를 거쳐 카탈로그를 완성하였습니다." 
           }
         ],
-        bgImg: "../images/detail01_img03.jpg",
+        bgImg: "../images/detail01_img03.jpg?v=260806",
         tools: ["ai"] 
       },
       {
@@ -120,7 +120,7 @@ const projectData = [
             desc: "수정사항 및 반응형 작업까지 마무리한 후 최종 검수를 거쳐<br>클라이언트에 납품하였습니다." 
           }
         ],
-        bgImg: "../images/detail01_img04.jpg",
+        bgImg: "../images/detail01_img04.jpg?v=260806",
         tools: ["ps", "ai", "html", "css", "js", "jquery"] 
       },
       {
@@ -151,7 +151,7 @@ const projectData = [
             desc: "수정사항 및 반응형 작업까지 마무리한 후 최종 검수를 거쳐<br>클라이언트에 납품하였습니다." 
           }
         ],
-        bgImg: "../images/detail01_img05.jpg",
+        bgImg: "../images/detail01_img05.jpg?v=260806",
         tools: ["ps", "ai", "html", "css", "js", "jquery"] 
       },
       {
@@ -182,7 +182,7 @@ const projectData = [
             desc: "수정사항 및 반응형 작업까지 마무리한 후 최종 검수를 거쳐<br>클라이언트에 납품하였습니다." 
           }
         ],
-        bgImg: "../images/detail01_img06.jpg",
+        bgImg: "../images/detail01_img06.jpg?v=260806",
         tools: ["ps", "ai", "html", "css", "js", "jquery"]
       },
       {
@@ -213,7 +213,7 @@ const projectData = [
             desc: "수정사항 및 반응형 작업까지 마무리한 후<br>최종 검수를 거쳐 제작 하였습니다." 
           }
         ],
-        bgImg: "../images/detail01_img07.jpg",
+        bgImg: "../images/detail01_img07.jpg?v=260806",
         tools: ["ps", "ai", "html", "css", "js", "jquery"] 
       },
       {
@@ -244,7 +244,7 @@ const projectData = [
             desc: "수정사항 및 반응형 작업까지 마무리한 후<br>최종 검수를 거쳐 제작 하였습니다." 
           }
         ],
-        bgImg: "../images/detail01_img08.jpg",
+        bgImg: "../images/detail01_img08.jpg?v=260806",
         tools: ["ps", "ai", "html", "css", "js", "jquery"] 
       },
       {
@@ -275,7 +275,7 @@ const projectData = [
             desc: "수정사항 및 반응형 작업까지 마무리한 후<br>최종 검수를 거쳐 제작하였습니다." 
           }
         ],
-        bgImg: "../images/detail01_img09.jpg",
+        bgImg: "../images/detail01_img09.jpg?v=260806",
         tools: ["ps", "ai", "html", "css", "js", "jquery"] 
       },
       {
@@ -298,7 +298,7 @@ const projectData = [
             desc: "다양한 시각 요소를 활용한 서브 페이지 디자인 및 퍼블리싱 작업을 진행하였으며, 반응형 작업과 수정사항을 반영하여 최종 검수를 완료하였습니다." 
           }
         ],
-        bgImg: "../images/detail01_img10.jpg",
+        bgImg: "../images/detail01_img10.jpg?v=260806",
         tools: ["ps", "ai", "html", "css", "js", "jquery"] 
       },
   ];
