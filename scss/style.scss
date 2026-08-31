@@ -312,6 +312,10 @@ section {
 .bgfix.bgB{ background-position-y:bottom;}
 .bgfix.cont{background-size: contain;}
 
+/* 이미지 레이지로딩 : 로딩 전 회색 플레이스홀더 -> 로드 완료 시 페이드 인 */
+.lazy-bg{ background-color:#f2f2f2; opacity:0; transition:opacity .5s ease;}
+.lazy-bg.bg-loaded{ opacity:1;}
+
 
 .title_wrap{
   margin-bottom: 3rem;
@@ -960,7 +964,7 @@ section {
 
           .bg_wrap{
             transform: scale(1);
-            transition: transform .5s ease;
+            transition: transform .5s ease, opacity .5s ease;
           }
           
           .txt_wrap{
@@ -1348,3 +1352,5 @@ section {
   }
  
 }
+/* AOS 스크립트 로딩 실패 대비 : 애니메이션 없이 콘텐츠를 즉시 노출 */
+.aos-fallback [data-aos]{ opacity:1 !important; transform:none !important;}
