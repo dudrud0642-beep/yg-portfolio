@@ -2,16 +2,16 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="robots" content="noindex, nofollow">
   <script src="js/redirect.js"></script>
+  <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>이영경 포트폴리오 | Web Designer &amp; Publisher</title>
-  <meta name="description" content="기획부터 UI/UX 디자인, 퍼블리싱까지 끝까지 해내는 웹디자이너 이영경의 포트폴리오입니다.">
+  <meta name="description" content="디자인과 구현 AI를 하나의 흐름으로 연결해 아이디어를 끝까지 완성하는 디자이너 이영경의 포트폴리오입니다.">
   <meta name="theme-color" content="#111111">
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/Paperlogy-6SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/portfolio.css?v=261008">
+  <link rel="preload" href="assets/fonts/Pretendard-Regular.page.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/IBMPlexSansKR-Bold.page.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/portfolio.css?v=261013i">
 </head>
 <body>
   <header class="hd">
@@ -35,9 +35,14 @@
     <section class="sec first about" id="about">
       <div class="wrap">
         <div class="head">
-          <div>
+          <div class="about-title">
             <p class="eyebrow">About · Since 2018</p>
-            <h2 class="disp">끝까지 해내는 사람,<br><b>이영경</b>입니다.</h2>
+            <h2 class="disp about-disp">
+              <span class="ln"><span class="nw is-strong">디자인과 AI를</span></span>
+              <span class="ln"><span class="nw is-muted">하나의 흐름으로</span> <span class="nw is-muted">연결해</span></span>
+              <span class="ln ln--split"><span class="nw is-strong">아이디어를</span> <span class="nw is-strong">끝까지 완성합니다<span class="is-accent">.</span></span></span>
+            </h2>
+            <p class="about-sign"><span class="nw"><span class="role">디자이너</span> <b>이영경</b></span></p>
           </div>
           <div class="about-txt">
             <p><strong>에이전시와 인하우스에서 <span class="nw">6년 6개월</span> 동안 웹을 만들어 왔습니다.</strong><span class="sent">공공기관, 기업, 쇼핑몰, 제약사, <span class="nw">교육 플랫폼</span>, 게임까지 다양한 분야의 웹사이트를 만들었습니다.</span><span class="sent"><span class="nw">사내 인트라넷</span>과 <span class="nw">전자메일 시스템</span> 구축, <span class="nw">제품 카탈로그 편집 디자인</span>까지 맡으며 분야마다 맞는 <span class="nw">디자인 방향</span>을 찾아 왔습니다.</span></p>
@@ -104,7 +109,7 @@
       <div class="wrap">
         <div class="head stacked">
           <div><p class="eyebrow">AI Works</p><h2 class="disp">AI와 함께 만든 작업</h2></div>
-          <p class="head-p"><span class="sent">디자인과 코드는 AI로 만들고, 저는 방향과 완성도를 책임집니다.</span><span class="sent">완성된 작업부터 차례로 공개하고 있습니다.</span></p>
+          <p class="head-p">디자인과 코드는 AI로 만들고, 저는 방향과 완성도를 책임집니다. 완성된 작업부터 차례로 공개하고 있습니다.</p>
         </div>
         <div class="stack" id="stack"></div>
       </div>
@@ -115,14 +120,14 @@
       <div class="wrap">
         <div class="head stacked">
           <div><p class="eyebrow">AI Lab</p><h2 class="disp">Prompt → Result</h2></div>
-          <p class="head-p"><span class="sent">가운데 손잡이를 좌우로 끌어 보세요.</span><span class="sent">왼쪽은 AI가 처음 만든 결과, 오른쪽은 피드백을 반영해 완성한 결과입니다.</span></p>
+          <p class="head-p"><span class="sent">가운데 손잡이를 좌우로 끌어 보세요.</span><span class="sent">왼쪽은 AI 첫 버전이나 기존 화면, 오른쪽은 완성한 결과입니다.</span></p>
         </div>
         <div class="seg" role="tablist" id="seg"></div>
         <div class="lab">
           <div class="cmp" id="cmp">
-            <div class="layer before"><span class="lbl l">AI 첫 결과</span><div class="stage" id="wire"></div></div>
-            <div class="layer after"><span class="lbl r">피드백 반영 후</span><div class="stage" id="result"></div></div>
-            <div class="handle" id="handle" role="slider" tabindex="0" aria-label="AI 첫 결과와 완성 결과 비교 위치" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span>‹ ›</span></div>
+            <div class="layer before"><span class="lbl l" id="lblL">AI 첫 결과</span><div class="stage" id="wire"></div></div>
+            <div class="layer after"><span class="lbl r" id="lblR">피드백 반영 후</span><div class="stage" id="result"></div></div>
+            <div class="handle" id="handle" role="slider" tabindex="0" aria-label="초안과 완성 결과 비교 위치" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span>‹ ›</span></div>
           </div>
           <aside class="memo" id="memo"></aside>
         </div>
@@ -144,11 +149,11 @@
     <section class="sec" id="design">
       <div class="wrap">
         <div class="head stacked">
-          <div><p class="eyebrow">Design Works</p><h2 class="disp">프로젝트마다 쌓아 온<br>UI 디자인 시안</h2></div>
+          <div><p class="eyebrow">Design Works</p><h2 class="disp"><span class="nw">Agency에서</span> <span class="nw">프로젝트마다</span> <span class="nw">쌓아 온</span> <span class="nw">UI 디자인 시안</span></h2></div>
           <p class="head-p">다양한 실무 프로젝트를 통해 제작한 UI 디자인 시안 모음입니다.</p>
         </div>
         <figure class="dw">
-          <div class="dw-scroll"><img src="images/design_works_img.jpg" width="3840" height="1640" loading="lazy" decoding="async" alt="실무 프로젝트 UI 디자인 시안 모음"></div>
+          <div class="dw-scroll"><img src="assets/images/pf-design-works.webp" width="2560" height="1094" loading="lazy" decoding="async" alt="실무 프로젝트 UI 디자인 시안 모음"></div>
           <figcaption><span><b>Design Works</b> · 실무 프로젝트에서 만든 UI 디자인 시안 모음</span><span class="hint">옆으로 넘겨 보세요 →</span></figcaption>
         </figure>
       </div>
@@ -169,9 +174,9 @@
               <span class="cc-val" data-copy-src>ddyggg@naver.com</span>
               <button type="button" class="copy" data-copy="ddyggg@naver.com">이메일 복사</button>
             </div>
-            <a class="cc cc-pink" href="https://leeyg.site/" target="_blank" rel="noopener">
+            <a class="cc cc-pink" href="https://portfolio.leeyg.site/" target="_blank" rel="noopener">
               <span class="tl">Portfolio</span>
-              <span class="cc-val">leeyg.site</span>
+              <span class="cc-val">portfolio.leeyg.site</span>
               <span class="arr" aria-hidden="true">↗</span>
             </a>
           </div>
@@ -184,8 +189,8 @@
     </footer>
   </main>
 
-  <img class="float" id="float" src="images/thumbnail01.jpg" alt="" aria-hidden="true">
+  <img class="float" id="float" src="assets/images/pf-thumb-01.webp" alt="" aria-hidden="true">
 
-  <script src="assets/js/portfolio.js?v=261008"></script>
+  <script src="assets/js/portfolio.js?v=261013i"></script>
 </body>
 </html>

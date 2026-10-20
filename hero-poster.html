@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>이영경 Hero 시안</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <style>
+    /* ---------- 폰트: 포트폴리오와 동일 (한글 Paperlogy · 영문 Gmarket Sans) ---------- */
+    @font-face{font-family:"Paperlogy";src:url("assets/fonts/Paperlogy-7Bold.woff2") format("woff2");font-weight:700;font-display:swap}
+    @font-face{font-family:"GmarketLatin";src:url("assets/fonts/GmarketSansMedium.latin.woff2") format("woff2");font-weight:500 600;size-adjust:92%;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F}
+    @font-face{font-family:"GmarketLatin";src:url("assets/fonts/GmarketSansBold.latin.woff2") format("woff2");font-weight:700 800;size-adjust:92%;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F}
+
+    :root{
+      color-scheme:dark;
+      --hero-bg:#111111;                 /* 포트폴리오 배경과 동일 */
+      --hero-strong:#FFFFFF;             /* 핵심 문장 */
+      --hero-muted:#5F5F65;              /* 보조 문장 */
+      --hero-meta:#8A8A90;               /* 상·하단 작은 정보 */
+      --hero-line:rgba(255,255,255,.12);
+      --hero-accent:#FFC9DC;             /* 포인트 핑크: 마침표 한 점 */
+      --hero-pad:clamp(20px,5.2vw,96px);
+      --hero-font:"GmarketLatin","Paperlogy","Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--hero-bg)}
+    body{-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+
+    /* ---------- Hero ---------- */
+    .hero{
+      min-height:100vh;
+      min-height:100svh;
+      display:grid;
+      grid-template-rows:auto 1fr auto;  /* 상단 정보 / 타이포 / 하단 정보 */
+      padding:calc(env(safe-area-inset-top,0px) + clamp(20px,2.4vw,36px)) var(--hero-pad) calc(env(safe-area-inset-bottom,0px) + clamp(20px,2.4vw,36px));
+      background:var(--hero-bg);
+      color:var(--hero-strong);
+      font-family:var(--hero-font);
+      overflow:hidden;
+    }
+
+    /* 상·하단 작은 정보: 포스터의 테두리 역할 */
+    .hero__meta,.hero__foot{
+      display:flex;white-space:nowrap;justify-content:space-between;align-items:center;gap:8px 32px;
+      font-size:12px;font-weight:500;line-height:1.4;letter-spacing:.16em;text-transform:uppercase;color:var(--hero-meta);
+    }
+    .hero__meta{padding-bottom:clamp(14px,1.4vw,20px);border-bottom:1px solid var(--hero-line)}
+    .hero__foot{padding-top:clamp(14px,1.4vw,20px);border-top:1px solid var(--hero-line)}
+    .hero__foot a{color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:12px;transition:color .2s}
+    .hero__foot a:hover,.hero__foot a:focus-visible{color:var(--hero-strong)}
+    .hero__foot a::after{content:"";width:1px;height:24px;background:currentColor;transform-origin:top;animation:hero-scroll 2s cubic-bezier(.65,0,.35,1) infinite}
+
+    /* 타이포 블록: 아래쪽에 무게를 두고 위는 비워 포스터 비율로 */
+    .hero__body{
+      container-type:inline-size;
+      display:flex;align-items:flex-end;
+      padding-block:clamp(40px,4vw,80px) clamp(28px,3.2vw,60px);
+    }
+    .hero__title{
+      /* 가장 긴 줄(약 10.5em)이 본문 폭의 약 90%를 채우는 크기.
+         화면 높이가 낮으면 상·하단 정보와 여백(약 164px + 7vw)을 뺀 높이에 맞춰 한 화면 안에 들어오게 제한 */
+      --fit:11.6;
+      --rows:4.4;
+      margin:0;
+      font-weight:700;
+      font-size:clamp(28px,7.8vw,152px);
+      font-size:clamp(28px,min(100cqi / var(--fit),(100svh - 164px - 7vw) / var(--rows)),152px);
+      line-height:1.1;                   /* 타이트한 행간 */
+      letter-spacing:-.04em;             /* 과하지 않게 조인 자간 */
+      word-spacing:-.04em;
+      font-kerning:normal;
+      font-synthesis:none;
+    }
+    .hero__line{display:block}
+    .is-strong{color:var(--hero-strong)}
+    .is-muted{color:var(--hero-muted)}
+    .is-accent{color:var(--hero-accent)}
+    .nw{white-space:nowrap}
+
+    /* 등장 효과: 줄마다 순서대로 (움직임 줄이기 설정이면 생략) */
+    .hero__line{animation:hero-rise .9s cubic-bezier(.2,.7,.2,1) both}
+    .hero__line:nth-child(2){animation-delay:.07s}
+    .hero__line:nth-child(3){animation-delay:.14s}
+    .hero__line:nth-child(4){animation-delay:.21s}
+    @keyframes hero-rise{from{transform:translateY(.3em);opacity:0}to{transform:none;opacity:1}}
+    @keyframes hero-scroll{0%{transform:scaleY(0)}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+    @media (prefers-reduced-motion:reduce){.hero__line,.hero__foot a::after{animation:none}}
+
+    /* ---------- 반응형 ---------- */
+    /* 모바일: 3번째 줄을 두 줄로 나눠 5줄로, 가장 긴 줄(약 8.9em)에 맞춰 다시 키움 */
+    @media (max-width:600px){
+      .hero .m-hide{display:none}
+      .hero__meta,.hero__foot{font-size:11px;letter-spacing:.1em;gap:16px}
+      .hero__title{--fit:9.4;--rows:5.7;line-height:1.14;letter-spacing:-.035em}
+      .hero__line--split > .nw{display:block}
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__meta">
+      <span>Lee Young Gyeong</span>
+      <span class="m-hide">Design · Publishing · AI</span>
+      <span>Portfolio 2026</span>
+    </div>
+
+    <div class="hero__body">
+      <h1 class="hero__title" id="hero-title">
+        <span class="hero__line">
+          <span class="nw is-strong">디자인과 구현</span>
+          <span class="nw is-strong">AI를</span>
+        </span>
+        <span class="hero__line">
+          <span class="nw is-muted">하나의 흐름으로</span>
+          <span class="nw is-muted">연결해</span>
+        </span>
+        <span class="hero__line hero__line--split">
+          <span class="nw is-muted">아이디어를</span>
+          <span class="nw is-strong">끝까지 완성하는</span>
+        </span>
+        <span class="hero__line">
+          <span class="nw is-muted">디자이너</span>
+          <span class="nw"><span class="is-strong">이영경</span><span class="is-muted">입니다</span><span class="is-accent">.</span></span>
+        </span>
+      </h1>
+    </div>
+
+    <div class="hero__foot">
+      <span>Web Designer &amp; Publisher<span class="m-hide"> · Since 2018</span></span>
+      <a href="#about">Scroll</a>
+    </div>
+  </section>
+
+</body>
+</html>

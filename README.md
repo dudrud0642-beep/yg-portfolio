@@ -1,4 +1,4 @@
-# 이영경 포트폴리오 (leeyg.site)
+# 이영경 포트폴리오 (portfolio.leeyg.site)
 
 ## 구조
 
